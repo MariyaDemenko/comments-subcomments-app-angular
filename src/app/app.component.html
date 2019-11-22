@@ -1,0 +1,20 @@
+<div class="container">
+    <h3>Search</h3>
+    <input (keyup.enter)="search()" [(ngModel)]="query" type="text" class='search-input' placeholder="Press enter to search">
+    <div *ngIf="search_results.length">
+        <h4>Search results</h4>
+        <div *ngFor="let result of search_results">
+          <div class='result-comment'> {{result.text}} </div>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <h3>Comments List</h3>
+    <textarea class="new-comment" [(ngModel)]="new_comment"> </textarea>
+    <button class="submit-btn" (click)="addNew()" (keyup.enter)="addNew()">Send</button>
+    <hr>
+</div>
+<hr>
+<div class="wrapper">
+  <app-comment *ngFor="let comment of comments" [comment]="comment" (updateComments)="updateComments($event)"></app-comment>
+</div>

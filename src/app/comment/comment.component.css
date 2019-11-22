@@ -1,0 +1,34 @@
+.comment-wrapper {
+    border-left: 3px solid #33b857;
+    padding: 10px 0px 10px 20px;
+    margin-top: 20px;
+}
+
+.comment-content {
+    background-color: white;
+    width: 100%;
+    font-size: 12px;
+    padding: 10px 10px 10px 40px;
+    margin-bottom: 5px;
+}
+
+.submit-btn {
+    width: 120px;
+    padding: 10px;
+    font-size: 12px;
+    background-color: #33b857;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    outline: none;
+}
+
+
+.reply-box {
+    width: 100%;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+}

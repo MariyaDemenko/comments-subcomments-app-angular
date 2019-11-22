@@ -1,0 +1,6 @@
+<div class="comment-wrapper">
+    <div class="comment-content">{{comment.text}}</div>
+    <textarea class="reply-box" [(ngModel)]="new"></textarea>
+    <button class="submit-btn" (click)="update()">Send</button>
+    <app-comment *ngFor="let response of comment.responses" [comment]="response" (updateComments)="updateCommentListener($event)"></app-comment>
+</div> 
